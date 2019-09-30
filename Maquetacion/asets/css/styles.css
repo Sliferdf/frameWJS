@@ -13,25 +13,150 @@ body {
 
 }
 
-
 .center {
     width: 75%;
     margin: 0px auto;
 }
+
+.clearfix {
+    clear: both;
+    float: none;
+}
+
 #logo {
     width: 30%;
     font-size: 30px;
     float: left;
+    margin-top: 35px;
 }
 
 #logo img {
     display: block;
     float: left;
     height: 60px;
+    margin-top: -9px;
+    margin-right: -10px;
+    animation: girar infinite 20s linear;
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 #brand {
     display: block;
     margin: 0px;
     float: left;
+}
+
+#menu {
+    width: 70%;
+    float: right;
+    font-size: 18px;
+
+}
+
+#menu ul {
+    line-height: 85px;
+    width: 70%;
+    float: right;
+}
+
+#menu ul li {
+    display: inline-block;
+    list-style: none;
+    height: 46px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #444;
+    transition: 300ms all;
+}
+
+#menu a:hover {
+    color: rgba(25, 154, 158, 0.493);
+}
+
+#slider {
+    width: 100%;
+    height: 350px;
+    /*line-height: 320px;*/
+    color: white;
+    text-shadow: 0px 0px 5px #444;
+
+    /*Degradado css */
+    background: rgba(147, 206, 222, 1);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(147, 206, 222, 1) 0%, rgba(117, 189, 209, 1) 41%, rgba(73, 165, 191, 1) 68%, rgba(73, 165, 191, 1) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(147, 206, 222, 1)), color-stop(41%, rgba(117, 189, 209, 1)), color-stop(68%, rgba(73, 165, 191, 1)), color-stop(100%, rgba(73, 165, 191, 1)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(147, 206, 222, 1) 0%, rgba(117, 189, 209, 1) 41%, rgba(73, 165, 191, 1) 68%, rgba(73, 165, 191, 1) 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(147, 206, 222, 1) 0%, rgba(117, 189, 209, 1) 41%, rgba(73, 165, 191, 1) 68%, rgba(73, 165, 191, 1) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(147, 206, 222, 1) 0%, rgba(117, 189, 209, 1) 41%, rgba(73, 165, 191, 1) 68%, rgba(73, 165, 191, 1) 100%);
+    background: radial-gradient(ellipse at center, rgba(147, 206, 222, 1) 0%, rgba(117, 189, 209, 1) 41%, rgba(73, 165, 191, 1) 68%, rgba(73, 165, 191, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#93cede', endColorstr='#49a5bf', GradientType=1);
+}
+
+#slider h1 {
+    margin: 0.2px;
+    padding: 0px;
+    padding-top: 155px;
+    text-align: center;
+}
+
+.btn-white {
+    display: block;
+    background: white;
+    color: rgb(58, 57, 57);
+    padding: 10px;
+    width: 90px;
+    height: 20px;
+    margin: 0px auto;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-shadow: none;
+    text-decoration: none;
+    line-height: 20px;
+    box-shadow: 0px 0px 5px rgb(124, 124, 124);
+    margin-top: 40px;
+    border-radius: 4px;
+    transition: 300ms all;
+}
+
+.btn-white:hover {
+    background: #444;
+    color: white;
+    box-shadow: 0px 0px 5px rgb(241, 236, 236);
+}
+
+#slider.slider-small {
+    height: 150px;
+}
+
+#slider.slider-small h1 {
+    margin: 0.2px;
+    padding: 0px;
+    padding-top: 60px;
+}
+
+#content{
+    width: 70%;
+    float: left;
+    border: 1px solid blue;
+    min-height: 450px;
+    margin-right: 25px
+}
+
+#sidebar {
+    width: 25%;
+    float: left;
+    border: 1px solid forestgreen;
+
 }
